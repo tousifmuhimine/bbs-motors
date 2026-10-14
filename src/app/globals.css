@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import "../styles.css";
+
+/* shadcn/ui theming — values follow the existing BBS Motors palette in
+   src/styles.css so utility-styled components sit in the same design. */
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #09090a;
+  --foreground: #ffffff;
+  --card: #141417;
+  --card-foreground: #ffffff;
+  --popover: #17171a;
+  --popover-foreground: #ffffff;
+  --primary: #e9432d;
+  --primary-foreground: #ffffff;
+  --secondary: #1d1d20;
+  --secondary-foreground: #b9b9be;
+  --muted: #1d1d20;
+  --muted-foreground: #b9b9be;
+  --accent: #1d1d20;
+  --accent-foreground: #ffffff;
+  --destructive: #ef472f;
+  --destructive-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.17);
+  --input: rgba(255, 255, 255, 0.17);
+  --ring: #e9432d;
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
